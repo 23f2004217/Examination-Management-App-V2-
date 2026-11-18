@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#2563eb">
+  {% if demo_accounts %}<meta name="emp-demo" content="{{ demo_accounts|tojson|forceescape }}">{% endif %}
+  <title>Examination Management Portal</title>
+  <link rel="manifest" href="/static/public/manifest.json">
+  <link rel="icon" href="/static/public/icons/icon-192.png">
+  <link rel="apple-touch-icon" href="/static/public/icons/icon-192.png">
+  
+
+  <!-- Bootstrap 5.3.3 + Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link href="/static/public/css/app.css" rel="stylesheet">
+</head>
+<body>
+  <div id="app"></div>
+
+  <!-- CDN scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@3.4.21/dist/vue.global.prod.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <!-- the app: native ES modules (frontend/src), no build step -->
+  <script type="module" src="/static/src/main.js?v=25"></script>
+</body>
+</html>
